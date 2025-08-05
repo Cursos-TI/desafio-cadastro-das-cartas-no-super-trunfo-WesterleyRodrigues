@@ -7,6 +7,41 @@
 //Teste larissa
 
 int main() {
+
+    char estado, código da cidade[3], nome[20];
+    int população, número de pontos turísticos;
+    float área, PIB;
+
+    printf("Carta1: \n");
+    printf("Digite o estado: \n");
+    scanf("%s", &estado);
+
+    printf("Digite o código da cidade: \n");
+    scanf("%s", &código da cidade);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", &nome);
+
+    printf("Digite o número de habitantes da cidade: \n");
+    scanf("%d", &população);
+
+    printf("Digite a área da cidade: \n");
+    scanf("%f", &área);
+
+    printf("Digite o PIB da cidade: \n")
+    scanf("%f", &PIB);
+
+    printf("Digite o número de pontos turísticos da cidade: \n");
+    scanf("%d", &número de pontos turísticos);
+    
+    
+    
+    
+    
+    
+
+    
+        
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
