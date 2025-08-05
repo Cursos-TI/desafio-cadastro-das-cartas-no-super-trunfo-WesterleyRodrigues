@@ -12,8 +12,7 @@ int main() {
     int população, número de pontos turísticos;
     float área, PIB;
 
-    printf("Carta1: \n");
-    printf("Digite o estado: \n");
+    printf("Carta 1: \nDigite o estado: \n");
     scanf("%s", &estado);
 
     printf("Digite o código da cidade: \n");
@@ -33,14 +32,36 @@ int main() {
 
     printf("Digite o número de pontos turísticos da cidade: \n");
     scanf("%d", &número de pontos turísticos);
-    
-    
-    
-    
-    
-    
 
-    
+    printf("Carta 2: \nDigite o estado: \n");
+    scanf("%s", &estado);
+
+    printf("Digite o código da cidade: \n");
+    scanf("%s", &código da cidade);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", &nome);
+
+    printf("Digite o número de habitantes da cidade: \n");
+    scanf("%d", &população);
+
+    printf("Digite a área da cidade: \n");
+    scanf("%f", &área);
+
+    printf("Digite o PIB da cidade: \n")
+    scanf("%f", &PIB);
+
+    printf("Digite o número de pontos turísticos da cidade: \n");
+    scanf("%d", &número de pontos turísticos);
+
+    printf("Carta 1: \nEstado: %s\nCódigo: %s\n", estado, código da cidade);
+    printf("Nome da Cidade: %s\nPopulação: %d\nÁrea: %f\n", nome, população, área);
+    printf("PIB: %f\nNúmero de Pontos Turísticos: %d\n", PIB, número de pontos turísticos);
+
+    printf("Carta 2: \nEstado: %s\nCódigo: %s\n", estado, código da cidade);
+    printf("Nome da Cidade: %s\nPopulação: %d\nÁrea: %f\n", nome, população, área);
+    printf("PIB: %f\nNúmero de Pontos Turísticos: %d\n", PIB, número de pontos turísticos);
+
         
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
