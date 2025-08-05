@@ -26,7 +26,7 @@ int main() {
     printf("Digite a área da cidade: \n");
     scanf("%f", &área);
 
-    printf("Digite o PIB da cidade: \n")
+    printf("Digite o PIB da cidade: \n");
     scanf("%f", &PIB);
 
     printf("Digite o número de pontos turísticos da cidade: \n");
@@ -47,7 +47,7 @@ int main() {
     printf("Digite a área da cidade: \n");
     scanf("%f", &área);
 
-    printf("Digite o PIB da cidade: \n")
+    printf("Digite o PIB da cidade: \n");
     scanf("%f", &PIB);
 
     printf("Digite o número de pontos turísticos da cidade: \n");
