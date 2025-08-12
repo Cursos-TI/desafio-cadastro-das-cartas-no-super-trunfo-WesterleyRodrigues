@@ -11,6 +11,8 @@ int main() {
     int numero1, numero2;
     float area1, area2;
     float pib1, pib2;
+    float densidade1, densidade2;
+    float pibc1, pibc2;
 
 // Coleta de dados da primeira carta.
 
@@ -66,6 +68,10 @@ int main() {
     printf("Estado: %s\nCódigo: %s\n", estado1, codigo1);
     printf("Nome da Cidade: %s\nPopulação: %d\nÁrea: %.2f\n", nome1, populacao1, area1);
     printf("PIB: %.2f\nNúmero de Pontos Turísticos: %d\n", pib1, numero1);
+    densidade1 = (float)(populacao1 / area1);
+    printf("Densidade Populacional: %.2f\n", densidade1);
+    pibc1 = (float)(pib1 / populacao1);
+    printf("PIB per Capita: %.2f\n", pibc1);
 
 // Impressão de dados da segunda carta.
 
@@ -73,6 +79,10 @@ int main() {
     printf("Estado: %s\nCódigo: %s\n", estado2, codigo2);
     printf("Nome da Cidade: %s\nPopulação: %d\nÁrea: %.2f\n", nome2, populacao2, area2);
     printf("PIB: %.2f\nNúmero de Pontos Turísticos: %d\n", pib2, numero2);
+    densidade2 = (float)(populacao2 / area2);
+    printf("Densidade Populacional: %.2f\n", densidade2);
+    pibc2 = (float)(pib2 / populacao2);
+    printf("PIB per Capita: %.2f\n", pibc2);
 
     return 0; // Finalizar o programa com susseco.
 
