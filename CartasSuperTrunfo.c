@@ -15,6 +15,8 @@ int main() {
     float pibc1, pibc2;
     float superpoder1, superpoder2;
     int opcao, opcao1, opcao2;
+    float escolha1, escolha11, escolha2, escolha22;
+    float resultado1, resultado2;
 
 // Coleta de dados da primeira carta.
 
@@ -140,7 +142,7 @@ int main() {
         printf("Carta 2: Cidade de %s VENCEU!!!\n", nome2);
     }
 
-    //Menu interetivo para comparação de cartas de um atributo.
+    //Menu interativo para comparação de cartas de um atributo.
 
     printf("*** Comparação de Cartas ***\n");
     printf("Escolha um atributo para comparação!\n");
@@ -240,22 +242,32 @@ int main() {
         case 1:
         printf("População da %s é: %lu\n", nome1, populacao1);
         printf("População da %s é: %lu\n", nome2, populacao2);
+        escolha1 = populacao1;
+        escolha11 = populacao2;
         break;
         case 2:
         printf("Área da %s é: %.2f\n", nome1, area1);
         printf("Área da %s é: %.2f\n", nome2, area2);
+        escolha1 = area1;
+        escolha11 = area2;
         break;
         case 3:
         printf("PIB da %s é: %.2f\n", nome1, pib1);
         printf("PIB da %s é: %.2f\n", nome2, pib2);
+        escolha1 = pib1;
+        escolha11 = pib2;
         break;
         case 4:
         printf("Número de pontos turísticos da %s é: %d\n", nome1, numero1);
         printf("Número de pontos turísticos da %s é: %d\n", nome2, numero2);
+        escolha1 = numero1;
+        escolha11 = numero2;
         break;
         case 5:
         printf("Densidade demográfica da %s é: %.2f\n", nome1, densidade1);
         printf("Densidade demográfica da %s é: %.2f\n", nome2, densidade2);
+        escolha1 = densidade1;
+        escolha11 = densidade2;
         break;
         default:
         printf("Opção Inválida.\n");
@@ -266,28 +278,51 @@ int main() {
         case 1:
         printf("População da %s é: %lu\n", nome1, populacao1);
         printf("População da %s é: %lu\n", nome2, populacao2);
+        escolha2 = populacao1;
+        escolha22 = populacao2;
         break;
         case 2:
         printf("Área da %s é: %.2f\n", nome1, area1);
         printf("Área da %s é: %.2f\n", nome2, area2);
+        escolha2 = area1;
+        escolha22 = area2;
         break;
         case 3:
         printf("PIB da %s é: %.2f\n", nome1, pib1);
         printf("PIB da %s é: %.2f\n", nome2, pib2);
+        escolha2 = pib1;
+        escolha22 = pib2;
         break;
         case 4:
         printf("Número de pontos turísticos da %s é: %d\n", nome1, numero1);
         printf("Número de pontos turísticos da %s é: %d\n", nome2, numero2);
+        escolha2 = numero1;
+        escolha22 = numero2;
         break;
         case 5:
         printf("Densidade demográfica da %s é: %.2f\n", nome1, densidade1);
         printf("Densidade demográfica da %s é: %.2f\n", nome2, densidade2);
+        escolha2 = densidade1;
+        escolha22 = densidade2;
         break;
         default:
         printf("Opção Inválida.\n");
         break;
       }
-      
+      resultado1 = escolha1 + escolha2;
+      resultado2 = escolha11 + escolha22;
+      printf("Cidade %s tem o total de %.2f pontos!\n", nome1, resultado1);
+      printf("Cidade %s tem o total de %.2f pontos!\n", nome2, resultado2);
+
+      if (resultado1 > resultado2)
+      {
+         printf("Cidade %s venceu!\n", nome1);
+      } else if (resultado1 < resultado2){
+        printf("Cidade %s venceu!\n", nome2);
+      } else {
+        printf("Empate!");
+      }
+
     }
 
 
