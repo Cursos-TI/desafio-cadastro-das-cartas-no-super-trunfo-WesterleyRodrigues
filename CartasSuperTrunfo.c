@@ -320,7 +320,7 @@ int main() {
       } else if (resultado1 < resultado2){
         printf("Cidade %s venceu!\n", nome2);
       } else {
-        printf("Empate!");
+        printf("Empate!\n");
       }
 
     }
