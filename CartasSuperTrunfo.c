@@ -14,54 +14,54 @@ int main() {
     float densidade1, densidade2;
     float pibc1, pibc2;
     float superpoder1, superpoder2;
-    int opcao;
+    int opcao, opcao1, opcao2;
 
 // Coleta de dados da primeira carta.
 
     printf("Carta 1: \n");
-    printf("Digite o estado:");
+    printf("Digite o estado: \n");
     scanf("%19s", estado1);
 
-    printf("Digite o código da cidade:");
+    printf("Digite o código da cidade: \n");
     scanf("%3s", codigo1);
 
-    printf("Digite o nome da cidade:");
+    printf("Digite o nome da cidade: \n");
     scanf("%19s", nome1);
 
-    printf("Digite o número de habitantes da cidade:");
+    printf("Digite o número de habitantes da cidade: \n");
     scanf("%lu", &populacao1);
 
-    printf("Digite a área da cidade:");
+    printf("Digite a área da cidade: \n");
     scanf("%f", &area1);
 
-    printf("Digite o PIB da cidade:");
+    printf("Digite o PIB da cidade: \n");
     scanf("%f", &pib1);
 
-    printf("Digite o número de pontos turísticos da cidade:");
+    printf("Digite o número de pontos turísticos da cidade: \n");
     scanf("%d", &numero1);
 
 // Coleta de dados da segunda carta.
 
     printf("Carta 2: \n");
-    printf("Digite o estado:");
+    printf("Digite o estado: \n");
     scanf("%19s", estado2);
 
-    printf("Digite o código da cidade:");
+    printf("Digite o código da cidade: \n");
     scanf("%3s", codigo2);
 
-    printf("Digite o nome da cidade:");
+    printf("Digite o nome da cidade: \n");
     scanf("%19s", nome2);
 
-    printf("Digite o número de habitantes da cidade:");
+    printf("Digite o número de habitantes da cidade: \n");
     scanf("%lu", &populacao2);
 
-    printf("Digite a área da cidade:");
+    printf("Digite a área da cidade: \n");
     scanf("%f", &area2);
 
-    printf("Digite o PIB da cidade:");
+    printf("Digite o PIB da cidade: \n");
     scanf("%f", &pib2);
 
-    printf("Digite o número de pontos turísticos da cidade:");
+    printf("Digite o número de pontos turísticos da cidade: \n");
     scanf("%d", &numero2);
 
 // Impressão de dados da primeira carta.
@@ -140,18 +140,19 @@ int main() {
         printf("Carta 2: Cidade de %s VENCEU!!!\n", nome2);
     }
 
-    //Menu interetivo para comparação de cartas.
+    //Menu interetivo para comparação de cartas de um atributo.
 
     printf("*** Comparação de Cartas ***\n");
-    printf("Escolha um dos atributos para comparação!\n");
+    printf("Escolha um atributo para comparação!\n");
     printf("1. População\n");
     printf("2. Área\n");
     printf("3. PIB\n");
     printf("4. Número de pontos turísticos\n");
     printf("5. Densidade demográfica\n");
-    printf("Escolha uma opção: ");
+    printf("Entre com a opção do atributo: \n");
     scanf("%d", &opcao);
 
+    //Comparação da opção escolhida.
     switch (opcao) 
     {
         case 1:
@@ -214,12 +215,82 @@ int main() {
           }
           break;
         default:
-          printf("Opção Inválida");
+          printf("Opção Inválida\n");
           break;
 
     }
 
-    return 0; // Finalizar o programa com susseco.
+    //Comparação de dois atributos.
+    printf("*** Comparação de dois atributos das Cartas ***\n");
+    printf("Escolha dois dos atributos para comparação!\n");
+    printf("1. População\n");
+    printf("2. Área\n");
+    printf("3. PIB\n");
+    printf("4. Número de pontos turísticos\n");
+    printf("5. Densidade demográfica\n");
+    printf("Escolha o primeiro atributo: \n");
+    scanf("%d", &opcao1);
+    printf("Escolha o segundo atributo: \n");
+    scanf("%d", &opcao2);
+    
+    if (opcao1 == opcao2){
+      printf("Atributo escolhido duas vezes.\n");
+    } else {
+      switch (opcao1){
+        case 1:
+        printf("População da %s é: %lu\n", nome1, populacao1);
+        printf("População da %s é: %lu\n", nome2, populacao2);
+        break;
+        case 2:
+        printf("Área da %s é: %.2f\n", nome1, area1);
+        printf("Área da %s é: %.2f\n", nome2, area2);
+        break;
+        case 3:
+        printf("PIB da %s é: %.2f\n", nome1, pib1);
+        printf("PIB da %s é: %.2f\n", nome2, pib2);
+        break;
+        case 4:
+        printf("Número de pontos turísticos da %s é: %d\n", nome1, numero1);
+        printf("Número de pontos turísticos da %s é: %d\n", nome2, numero2);
+        break;
+        case 5:
+        printf("Densidade demográfica da %s é: %.2f\n", nome1, densidade1);
+        printf("Densidade demográfica da %s é: %.2f\n", nome2, densidade2);
+        break;
+        default:
+        printf("Opção Inválida.\n");
+        break;
+      }
+        switch (opcao2)
+      {
+        case 1:
+        printf("População da %s é: %lu\n", nome1, populacao1);
+        printf("População da %s é: %lu\n", nome2, populacao2);
+        break;
+        case 2:
+        printf("Área da %s é: %.2f\n", nome1, area1);
+        printf("Área da %s é: %.2f\n", nome2, area2);
+        break;
+        case 3:
+        printf("PIB da %s é: %.2f\n", nome1, pib1);
+        printf("PIB da %s é: %.2f\n", nome2, pib2);
+        break;
+        case 4:
+        printf("Número de pontos turísticos da %s é: %d\n", nome1, numero1);
+        printf("Número de pontos turísticos da %s é: %d\n", nome2, numero2);
+        break;
+        case 5:
+        printf("Densidade demográfica da %s é: %.2f\n", nome1, densidade1);
+        printf("Densidade demográfica da %s é: %.2f\n", nome2, densidade2);
+        break;
+        default:
+        printf("Opção Inválida.\n");
+        break;
+      }
+      
+    }
 
+
+    return 0; // Finalizar o programa com susseco.
 
 }
